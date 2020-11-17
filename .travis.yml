@@ -35,3 +35,4 @@ deploy:
 
 branches:
   only:
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/

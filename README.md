@@ -1,6 +1,8 @@
 # xpots
 基于ts编写的js工具库
 
+[![Build Status](https://www.travis-ci.org/NOcooker/xpots.svg?branch=master)](https://www.travis-ci.org/NOcooker/xpots) [![Coverage Status](https://coveralls.io/repos/github/NOcooker/xpots/badge.svg?branch=master)](https://coveralls.io/github/NOcooker/xpots?branch=master)
+
 # 安装代码格式化依赖 eslint | prettier
 npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-config-prettier eslint-plugin-prettier
 
