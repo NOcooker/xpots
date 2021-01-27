@@ -64,32 +64,68 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#xpots" id="xpots" style="color: inherit; text-decoration: none;">
-					<h1>xpots</h1>
+				<p>logo预留</p>
+				<a href="#xpots-10----文档" id="xpots-10----文档" style="color: inherit; text-decoration: none;">
+					<h1>xpots 1.0  - <a href="https://nocooker.github.io/xpots/">文档</a></h1>
 				</a>
-				<p>基于ts编写的js工具库</p>
-				<a href="#安装代码格式化依赖-eslint--prettier" id="安装代码格式化依赖-eslint--prettier" style="color: inherit; text-decoration: none;">
-					<h1>安装代码格式化依赖 eslint | prettier</h1>
+				<p><a href="https://www.travis-ci.org/NOcooker/xpots"><img src="https://www.travis-ci.org/NOcooker/xpots.svg?branch=master" alt="Build Status"></a> <a href="https://coveralls.io/github/NOcooker/xpots?branch=master"><img src="https://coveralls.io/repos/github/NOcooker/xpots/badge.svg?branch=master" alt="Coverage Status"></a></p>
+				<a href="#源自" id="源自" style="color: inherit; text-decoration: none;">
+					<h2>源自</h2>
 				</a>
-				<p>npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-config-prettier eslint-plugin-prettier</p>
-				<p>新建 eslint | prettier 的配置文件</p>
-				<p>新增npm命令：lint | format</p>
-				<a href="#增加单元测试" id="增加单元测试" style="color: inherit; text-decoration: none;">
-					<h1>增加单元测试</h1>
+				<p><code>xpots</code> 是一个基于ts编写的js工具库。最开始来自于公司多个线上项目中公共js方法的大集合，为了不再繁琐的Ctrl+C/V，所以我们把所有公共的js方法集合到xpots里，并以npm包的形式安装到各个项目中。</p>
+				<blockquote>
+					<p>同时集成了文档自动生成，方便后续别的小伙伴使用，学习。
+					同时，<code>xpots</code>还兼具学习ts的目的，整个项目基于ts编写，在编写方法的同时达到熟悉ts语法的目的。</p>
+				</blockquote>
+				<a href="#安装" id="安装" style="color: inherit; text-decoration: none;">
+					<h2>安装</h2>
 				</a>
-				<p>npm install --save-dev jest ts-jest @types/jest</p>
-				<p>新增npm命令：test</p>
+				<p>这个项目使用 <a href="http://nodejs.org">node</a> 和 <a href="https://npmjs.com">npm</a>。请确保你本地安装了它们。</p>
+				<pre><code class="language-sh">$ npm install xpots
+</code></pre>
+				<a href="#使用说明" id="使用说明" style="color: inherit; text-decoration: none;">
+					<h2>使用说明</h2>
+				</a>
+				<p>对于vue项目，可直接在main.js入口文件内引入，赋值到vue实例下，作为全局方法引用：</p>
+				<pre><code><span class="hljs-keyword">import</span> xpots from &#x27;xpots&#x27;
+<span class="hljs-type">Vue</span>.proto<span class="hljs-keyword">type</span>.utils = xpots
+</code></pre>
+				<a href="#其他优秀工具库" id="其他优秀工具库" style="color: inherit; text-decoration: none;">
+					<h2>其他优秀工具库</h2>
+				</a>
+				<ul>
+					<li><a href="https://github.com/lodash/lodash">Lodash</a></li>
+				</ul>
+				<a href="#维护者" id="维护者" style="color: inherit; text-decoration: none;">
+					<h2>维护者</h2>
+				</a>
+				<p><a href="https://github.com/linwens">@linwens</a></p>
+				<a href="#如何贡献" id="如何贡献" style="color: inherit; text-decoration: none;">
+					<h2>如何贡献</h2>
+				</a>
+				<p>非常欢迎你的加入！<a href="https://github.com/NOcooker/xpots/issues/new">提一个 Issue</a> 或者提交一个 Pull Request。
+				也可以fork项目，开发自己的工具库。</p>
 				<a href="#项目结构说明" id="项目结构说明" style="color: inherit; text-decoration: none;">
-					<h1>项目结构说明</h1>
+					<h3>项目结构说明</h3>
 				</a>
-				<p>所有方法单独一个文件，写在src/下，为了doc页面内容没关，注释里都ignore掉，只在types/对应文件下复制一份备注
+				<p>所有方法单独一个文件，写在src/下，为了生成的doc页面内容美观，注释里都ignore掉，只在types/对应文件下复制一份备注
 					所有内部不对外开发的方法写在internal/里
-				所有类型声明、接口等写在types/里，一类的方法可以做合并，如math都用于计算</p>
+				所有类型声明、接口等写在types/里，一类的方法，如<code>lodash的math</code> 可以做合并</p>
 				<a href="#开发参考" id="开发参考" style="color: inherit; text-decoration: none;">
-					<h1>开发参考</h1>
+					<h3>开发参考</h3>
 				</a>
-				<p>每个方法需写明：作者，功能描述，参数，返回值</p>
-				<pre><code>  <span class="hljs-variable">@hidden</span> 和 <span class="hljs-variable">@ignore</span> ：用于隐藏代码内容，不在文档展示</code></pre>
+				<p>每个方法需写明：作者，功能描述，参数，返回值
+				具体注释的写法可参考<a href="https://typedoc.org/guides/doccomments/">tsdoc文档</a>，如：</p>
+				<pre><code>  <span class="hljs-variable">@hidden</span> 和 <span class="hljs-variable">@ignore</span> ：用于隐藏代码内容，不在文档展示
+</code></pre>
+				<a href="#贡献者" id="贡献者" style="color: inherit; text-decoration: none;">
+					<h3>贡献者</h3>
+				</a>
+				<p>感谢以下参与项目的人：</p>
+				<a href="#使用许可" id="使用许可" style="color: inherit; text-decoration: none;">
+					<h2>使用许可</h2>
+				</a>
+				<p><a href="LICENSE">MIT</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -103,7 +139,34 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function">
+						<a href="globals.html#deepclone" class="tsd-kind-icon">deep<wbr>Clone</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#hello" class="tsd-kind-icon">hello</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isarray" class="tsd-kind-icon">is<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isdate" class="tsd-kind-icon">is<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isfunction" class="tsd-kind-icon">is<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnull" class="tsd-kind-icon">is<wbr>Null</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isobject" class="tsd-kind-icon">is<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isregexp" class="tsd-kind-icon">is<wbr>Reg<wbr>Exp</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#runtime" class="tsd-kind-icon">run<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#whatstype" class="tsd-kind-icon">whats<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
