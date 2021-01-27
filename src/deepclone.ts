@@ -1,8 +1,8 @@
-import isNull from '../lib/internal/isNull';
-import isFunction from '../lib/internal/isFunction';
-import isDate from '../lib/internal/isDate';
-import isRegExp from '../lib/internal/isRegExp';
-import isArray from '../lib/internal/isArray';
+import isNull from './internal/isNull';
+import isFunction from './internal/isFunction';
+import isDate from './internal/isDate';
+import isRegExp from './internal/isRegExp';
+import isArray from './internal/isArray';
 
 function deepClone(obj: any): any {
   if (isNull(obj)) return null
