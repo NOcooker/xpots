@@ -1,4 +1,5 @@
 /**
+ * @category Math方法
  * @remarks
  * 这个方法返回一个字符串
  * @author 林文书

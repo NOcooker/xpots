@@ -1,5 +1,9 @@
 import trim from "./trim";
 
+/**
+ * @category 内部方法
+ * @param value 
+ */
 function isEmpty(value: any): boolean {
   return (
     !value

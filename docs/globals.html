@@ -68,12 +68,31 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Functions</h3>
+							<h3>Math方法 Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#fixed" class="tsd-kind-icon">fixed</a></li>
+							</ul>
+							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="globals.html#deepclone" class="tsd-kind-icon">deep<wbr>Clone</a></li>
-								<li class="tsd-kind-function"><a href="globals.html#hello" class="tsd-kind-icon">hello</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#download" class="tsd-kind-icon">download</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#exportfile" class="tsd-kind-icon">export<wbr>File</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#formatdate" class="tsd-kind-icon">format<wbr>Date</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#trim" class="tsd-kind-icon">trim</a></li>
+							</ul>
+							<h3>url参数相关 Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#getallqueries" class="tsd-kind-icon">get<wbr>All<wbr>Queries</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#getquery" class="tsd-kind-icon">get<wbr>Query</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#nofakeparams" class="tsd-kind-icon">no<wbr>Fake<wbr>Params</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#replacequery" class="tsd-kind-icon">replace<wbr>Query</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#serialquery" class="tsd-kind-icon">serial<wbr>Query</a></li>
+							</ul>
+							<h3>内部方法 Functions</h3>
+							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="globals.html#isarray" class="tsd-kind-icon">is<wbr>Array</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isdate" class="tsd-kind-icon">is<wbr>Date</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isfunction" class="tsd-kind-icon">is<wbr>Function</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isnull" class="tsd-kind-icon">is<wbr>Null</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isobject" class="tsd-kind-icon">is<wbr>Object</a></li>
@@ -81,12 +100,74 @@
 								<li class="tsd-kind-function"><a href="globals.html#runtime" class="tsd-kind-icon">run<wbr>Time</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#whatstype" class="tsd-kind-icon">whats<wbr>Type</a></li>
 							</ul>
+							<h3>数组操作相关 Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#flatarray" class="tsd-kind-icon">flat<wbr>Array</a></li>
+							</ul>
+							<h3>编写demo Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#hello" class="tsd-kind-icon">hello</a></li>
+							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
+				<h2>Math方法 Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="fixed" class="tsd-anchor"></a>
+					<h3>fixed</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">fixed<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, decimals<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, thousandth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/Math/fixed.ts#L11">Math/fixed.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>这个方法返回一个字符串</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p>这个方法用于小数后位数补全</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>目标数</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> decimals: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>小数点后保留位数</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thousandth: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>是否展示千分位符号 ,</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Other Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="deepclone" class="tsd-anchor"></a>
 					<h3>deep<wbr>Clone</h3>
@@ -97,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/deepclone.ts#L7">deepclone.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/deepclone.ts#L7">deepclone.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -111,45 +192,253 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="hello" class="tsd-anchor"></a>
-					<h3>hello</h3>
+					<a name="download" class="tsd-anchor"></a>
+					<h3>download</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">hello<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">download<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/hello.ts#L10">hello.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/download.ts#L2">download.ts:2</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="exportfile" class="tsd-anchor"></a>
+					<h3>export<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">export<wbr>File<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BlobPart</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DownType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/exportFile.ts#L3">exportFile.ts:3</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">BlobPart</span></h5>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">DownType</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="formatdate" class="tsd-anchor"></a>
+					<h3>format<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">format<wbr>Date<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, format<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/formatDate.ts#L4">formatDate.ts:4</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> format: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;yyyy-MM-dd&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="trim" class="tsd-anchor"></a>
+					<h3>trim</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">trim<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/trim.ts#L1">internal/trim.ts:1</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>url参数相关 Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getallqueries" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Queries</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Queries<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AnyObject</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in UrlQuery/getAllQuery.ts:9</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>remarks</dt>
-									<dd><p>这个方法返回一个字符串 <a href="http://www.baidu.com" class="external">百度</a></p>
-									</dd>
-									<dt>author</dt>
-									<dd><p>林文书</p>
-									</dd>
-									<dt>see</dt>
-									<dd><p>这个方法是用来打招呼的</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>姓名</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AnyObject</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getquery" class="tsd-anchor"></a>
+					<h3>get<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Query<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in UrlQuery/getQuery.ts:8</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="nofakeparams" class="tsd-anchor"></a>
+					<h3>no<wbr>Fake<wbr>Params</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">no<wbr>Fake<wbr>Params<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AnyObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AnyObject</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/noFakeParams.ts#L8">noFakeParams.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">AnyObject</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AnyObject</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="replacequery" class="tsd-anchor"></a>
+					<h3>replace<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">replace<wbr>Query<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AnyObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in UrlQuery/replaceQuery.ts:8</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>params: <span class="tsd-signature-type">AnyObject</span></h5>
+									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>返回 hello ${name}</p>
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="serialquery" class="tsd-anchor"></a>
+					<h3>serial<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">serial<wbr>Query<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AnyObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in UrlQuery/serialQuery.ts:7</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">AnyObject</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>内部方法 Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="isarray" class="tsd-anchor"></a>
 					<h3>is<wbr>Array</h3>
@@ -160,13 +449,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/isArray.ts#L3">internal/isArray.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isArray.ts#L7">internal/isArray.ts:7</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -183,13 +476,44 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/isDate.ts#L3">internal/isDate.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isDate.ts#L7">internal/isDate.ts:7</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="isempty" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isEmpty.ts#L7">internal/isEmpty.ts:7</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -206,13 +530,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/isFunction.ts#L3">internal/isFunction.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isFunction.ts#L7">internal/isFunction.ts:7</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -229,13 +557,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/isNull.ts#L3">internal/isNull.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isNull.ts#L7">internal/isNull.ts:7</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -252,13 +584,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/isObject.ts#L3">internal/isObject.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isObject.ts#L7">internal/isObject.ts:7</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -275,13 +611,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/isRegExp.ts#L3">internal/isRegExp.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isRegExp.ts#L7">internal/isRegExp.ts:7</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -292,13 +632,13 @@
 					<a name="runtime" class="tsd-anchor"></a>
 					<h3>run<wbr>Time</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Time<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Types.Func</span>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Time<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Func</span>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/runtime.ts#L8">internal/runtime.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/runtime.ts#L10">internal/runtime.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -309,7 +649,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">Types.Func</span></h5>
+									<h5>fn: <span class="tsd-signature-type">Func</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>需要测试的函数</p>
 									</div>
@@ -335,9 +675,11 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/b2fef15/src/internal/whatsType.ts#L2">internal/whatsType.ts:2</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/whatsType.ts#L6">internal/whatsType.ts:6</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -345,9 +687,105 @@
 								</li>
 								<li>
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>数组操作相关 Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="flatarray" class="tsd-anchor"></a>
+					<h3>flat<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">flat<wbr>Array<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, deep<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/Array/flat.ts#L12">Array/flat.ts:12</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>这个方法返回一个一级数组</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>李博</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p>这个方法用于扁平化多维数组</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arr: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>目标数组</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> deep: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Infinity</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>扁平的层级</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>返回 一级数组</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>编写demo Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="hello" class="tsd-anchor"></a>
+					<h3>hello</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">hello<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/hello.ts#L14">hello.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>这个方法返回一个字符串 <a href="http://www.baidu.com" class="external">百度</a></p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p>这个方法是用来打招呼的</p>
+										<pre><code>&lt;my-custom-<span class="hljs-keyword">element</span>&gt;Highlight JS will auto detect <span class="hljs-keyword">the</span> language&lt;/my-custom-<span class="hljs-keyword">element</span>&gt;
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>姓名</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>返回 hello ${name}</p>
 						</li>
 					</ul>
 				</section>
@@ -367,6 +805,27 @@
 						<a href="globals.html#deepclone" class="tsd-kind-icon">deep<wbr>Clone</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#download" class="tsd-kind-icon">download</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#exportfile" class="tsd-kind-icon">export<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#fixed" class="tsd-kind-icon">fixed</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#flatarray" class="tsd-kind-icon">flat<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#formatdate" class="tsd-kind-icon">format<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getallqueries" class="tsd-kind-icon">get<wbr>All<wbr>Queries</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getquery" class="tsd-kind-icon">get<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#hello" class="tsd-kind-icon">hello</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -374,6 +833,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#isdate" class="tsd-kind-icon">is<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#isfunction" class="tsd-kind-icon">is<wbr>Function</a>
@@ -388,7 +850,19 @@
 						<a href="globals.html#isregexp" class="tsd-kind-icon">is<wbr>Reg<wbr>Exp</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#nofakeparams" class="tsd-kind-icon">no<wbr>Fake<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#replacequery" class="tsd-kind-icon">replace<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#runtime" class="tsd-kind-icon">run<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#serialquery" class="tsd-kind-icon">serial<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#trim" class="tsd-kind-icon">trim</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#whatstype" class="tsd-kind-icon">whats<wbr>Type</a>

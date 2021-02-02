@@ -1,4 +1,5 @@
 /**
+ * @category 数组操作相关
  * @remarks
  * 这个方法返回一个一级数组
  * @param name 姓名
