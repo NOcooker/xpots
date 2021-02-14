@@ -1,6 +1,6 @@
 logo预留
 
-xpots - [文档](https://nocooker.github.io/xpots/)
+xpots - [文档](https://nocooker.github.io/xpots/globals.html)
 =========================
 [![Build Status](https://www.travis-ci.org/NOcooker/xpots.svg?branch=master)](https://www.travis-ci.org/NOcooker/xpots) [![Coverage Status](https://coveralls.io/repos/github/NOcooker/xpots/badge.svg?branch=master)](https://coveralls.io/github/NOcooker/xpots?branch=master)
 

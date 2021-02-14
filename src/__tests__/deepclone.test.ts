@@ -9,8 +9,9 @@ test("deepclone", () => {
   // expect(deepClone(function() {
   //   return true
   // })).toStrictEqual({})
-
-  expect(deepClone(new Date())).toStrictEqual(new Date())
+  
+  const now = new Date();
+  expect(deepClone(now)).toStrictEqual(now)
 
   expect(deepClone(new RegExp(/a/g))).toStrictEqual(/a/g)
 
