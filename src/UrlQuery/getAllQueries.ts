@@ -1,5 +1,5 @@
 import { AnyObject } from "../types/public";
-import isNull from "../../lib/internal/isNull";
+import isNull from "../internal/isNull";
 import isEmpty from "../internal/isEmpty";
 
 /**
