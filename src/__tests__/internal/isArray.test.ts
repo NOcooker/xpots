@@ -1,4 +1,4 @@
-import isArray from '../../lib/internal/isArray';
+import isArray from '../../internal/isArray';
 
 test('测试isArray', () => {
     expect(isArray([])).toBe(true)

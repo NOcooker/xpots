@@ -1,11 +1,19 @@
 import whatsType from './whatsType';
 
 /**
+ * ```
+ * isNull(null) => true
+ * ```
+ * @version v0.1.0
+ * @since v0.1.0
  * @category 内部方法
- * @param obj 
+ * @author 林文书
+ * @remarks
+ * 判断数据是否是null
+ * @param data 
  */
-function isNull(obj: any): boolean {
-  return whatsType(obj, 'Null');
+function isNull(data: any): boolean {
+  return whatsType(data, 'Null');
 }
 
 export default isNull;

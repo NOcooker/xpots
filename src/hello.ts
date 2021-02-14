@@ -1,15 +1,16 @@
 /**
- * @category 编写demo
- * @remarks
- * 这个方法返回一个字符串 {@link http://www.baidu.com | 百度}
- * @param name 姓名
- * @returns 返回 hello ${name}
- * @author 林文书
- * @see 这个方法是用来打招呼的
  * 
  * ```
- * <my-custom-element>Highlight JS will auto detect the language</my-custom-element>
+ * hello("xpots") => "Hello xpots"
  * ```
+ * @category 编写demo
+ * @version 当前版本, 如v0.2.0
+ * @since 首次发布时的版本, 如v0.1.0
+ * @remarks
+ * 注释参考文档 {@link https://typedoc.org/guides/doccomments/#supported-tags | typedoc}
+ * @param name 姓名
+ * @returns 返回 "hello ${name}"
+ * @author 作者
  */
 function hello(name: string): string {
   return `Hello ${name}`;

@@ -32,7 +32,7 @@ Vue.prototype.utils = xpots
 
 ## 维护者
 
-[@linwens](https://github.com/linwens)
+[@NOcooker](https://github.com/NOcooker)
 
 ## 如何贡献
 
@@ -45,6 +45,10 @@ Vue.prototype.utils = xpots
 所有类型声明、接口等写在types/里，一类的方法，如`lodash的math` 可以做合并
 
 ### 开发参考
+通过 `npm run start` 开启ts watch 实时编译;  
+通过 `npm run doc` 基于 gulp 根据代码变更自动生成对应文档;  
+针对单文件测试，可以使用 `npm run test:single` 然后输入文件名，开始对本次编写的文件进行单元测试。如果直接测试全体文件，请使用 `npm run test`;  
+
 每个方法需写明：作者，功能描述，参数，返回值
 具体注释的写法可参考[tsdoc文档](https://typedoc.org/guides/doccomments/)，如：
 ```
@@ -53,7 +57,7 @@ Vue.prototype.utils = xpots
 
 ### 贡献者
 
-感谢以下参与项目的人：
+感谢以下参与项目的人：`hzxdffe`
 
 
 ## 使用许可

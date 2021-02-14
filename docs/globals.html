@@ -97,7 +97,6 @@
 								<li class="tsd-kind-function"><a href="globals.html#isnull" class="tsd-kind-icon">is<wbr>Null</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isobject" class="tsd-kind-icon">is<wbr>Object</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isregexp" class="tsd-kind-icon">is<wbr>Reg<wbr>Exp</a></li>
-								<li class="tsd-kind-function"><a href="globals.html#runtime" class="tsd-kind-icon">run<wbr>Time</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#whatstype" class="tsd-kind-icon">whats<wbr>Type</a></li>
 							</ul>
 							<h3>数组操作相关 Functions</h3>
@@ -118,25 +117,34 @@
 					<a name="fixed" class="tsd-anchor"></a>
 					<h3>fixed</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">fixed<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, decimals<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, thousandth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">fixed<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, decimals<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, thousandth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/Math/fixed.ts#L11">Math/fixed.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/Math/fixed.ts#L17">Math/fixed.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">fixed</span><span class="hljs-params">(<span class="hljs-number">10000</span>, <span class="hljs-number">3</span>, true)</span></span> =&gt; <span class="hljs-string">&quot;10,000.000&quot;</span>
+<span class="hljs-function"><span class="hljs-title">fixed</span><span class="hljs-params">(<span class="hljs-number">233.68</span>, <span class="hljs-number">5</span>)</span></span> =&gt; <span class="hljs-string">&quot;233.68000&quot;</span>
+<span class="hljs-function"><span class="hljs-title">fixed</span><span class="hljs-params">(<span class="hljs-number">123.45</span>, -<span class="hljs-number">2</span>)</span></span> =&gt; <span class="hljs-string">&quot;123&quot;</span>
+</code></pre>
+								</div>
 								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
 									<dt>remarks</dt>
-									<dd><p>这个方法返回一个字符串</p>
+									<dd><p>这个方法用于小数后位数补全, 也支持展示千分位符，最后返回一个字符串</p>
 									</dd>
 									<dt>author</dt>
 									<dd><p>林文书</p>
-									</dd>
-									<dt>see</dt>
-									<dd><p>这个方法用于小数后位数补全</p>
 									</dd>
 								</dl>
 							</div>
@@ -161,7 +169,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -178,9 +186,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/deepclone.ts#L7">deepclone.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/deepclone.ts#L19">deepclone.ts:19</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">deepClone</span><span class="hljs-params">({a: <span class="hljs-number">1</span>, b: <span class="hljs-number">2</span>})</span></span> =&gt; {<span class="hljs-selector-tag">a</span>: <span class="hljs-number">1</span>, <span class="hljs-selector-tag">b</span>: <span class="hljs-number">2</span>}
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>该方法用于深拷贝</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -201,7 +226,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/download.ts#L2">download.ts:2</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/download.ts#L2">download.ts:2</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -224,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/exportFile.ts#L3">exportFile.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/exportFile.ts#L3">exportFile.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,9 +278,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/formatDate.ts#L4">formatDate.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/formatDate.ts#L17">formatDate.ts:17</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">formatDate</span><span class="hljs-params">(<span class="hljs-number">1613268688559</span>, <span class="hljs-string">&quot;yyyy/MM/dd&quot;</span>)</span></span> =&gt; <span class="hljs-string">&quot;2021/02/14&quot;</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>该方法用于格式化时间</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -263,6 +308,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> format: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;yyyy-MM-dd&quot;</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -279,13 +326,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/trim.ts#L1">internal/trim.ts:1</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/trim.ts#L16">internal/trim.ts:16</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">trim</span><span class="hljs-params">(<span class="hljs-string">&quot; abc &quot;</span>)</span></span> =&gt; <span class="hljs-string">&quot;abc&quot;</span>
+<span class="hljs-function"><span class="hljs-title">trim</span><span class="hljs-params">(<span class="hljs-string">&quot; a b c &quot;</span>)</span></span> =&gt; <span class="hljs-string">&quot;a b c&quot;</span>
+<span class="hljs-function"><span class="hljs-title">trim</span><span class="hljs-params">(<span class="hljs-string">&quot;&quot;</span>)</span></span> =&gt; <span class="hljs-string">&quot;&quot;</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>该方法用于清除字符串头尾的空格</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -305,20 +376,43 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in UrlQuery/getAllQuery.ts:9</li>
+									<li>Defined in UrlQuery/getAllQueries.ts:25</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>getAllQueries(<span class="hljs-string">&quot;http://www.aaa.com/path?q1=11&amp;q2=22&amp;q3=33&quot;</span>)
+=&gt;
+{
+  <span class="hljs-symbol">q1</span>: <span class="hljs-string">&quot;11&quot;</span>,
+  <span class="hljs-symbol">q2</span>: <span class="hljs-string">&quot;22&quot;</span>,
+  <span class="hljs-symbol">q3</span>: <span class="hljs-string">&quot;33&quot;</span>
+}
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>获取url中的全部传参</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AnyObject</span></h4>
+							<p>返回 url传参组成的对象</p>
 						</li>
 					</ul>
 				</section>
@@ -332,10 +426,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in UrlQuery/getQuery.ts:8</li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/UrlQuery/getQuery.ts#L17">UrlQuery/getQuery.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">getQuery</span><span class="hljs-params">(<span class="hljs-string">&quot;q1&quot;</span>, <span class="hljs-string">&quot;http://www.aaa.com/path?q1=11&amp;q2=22&amp;q3=33&quot;</span>)</span></span> =&gt; <span class="hljs-string">&quot;11&quot;</span>
+<span class="hljs-function"><span class="hljs-title">getQuery</span><span class="hljs-params">(<span class="hljs-string">&quot;q4&quot;</span>, <span class="hljs-string">&quot;http://www.aaa.com/path&quot;</span>)</span></span> =&gt; null
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>获取url传参中指定的键值，如果没有对应传值，返回null</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -362,10 +475,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/noFakeParams.ts#L8">noFakeParams.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/noFakeParams.ts#L23">noFakeParams.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-comment">// 如在请求传参之前，去除空的值,不包含0</span>
+const params = {
+  <span class="hljs-selector-tag">a</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-selector-tag">b</span>: null,
+  c: <span class="hljs-number">1</span>,
+  d: <span class="hljs-string">&quot;&quot;</span>
+}
+<span class="hljs-function"><span class="hljs-title">noFakeParams</span><span class="hljs-params">(params)</span></span> =&gt; { <span class="hljs-selector-tag">a</span>: <span class="hljs-number">0</span>, c: <span class="hljs-number">1</span> }
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>该方法可用于去除值为空的传参</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -389,10 +527,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in UrlQuery/replaceQuery.ts:8</li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/UrlQuery/replaceQuery.ts#L24">UrlQuery/replaceQuery.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>const params = {
+  <span class="hljs-symbol">q1</span>: <span class="hljs-string">&quot;abc&quot;</span>,
+  <span class="hljs-symbol">q2</span>: <span class="hljs-string">&quot;hello&quot;</span>,
+  <span class="hljs-symbol">q4</span>: <span class="hljs-string">&quot;444&quot;</span>
+}
+replaceQuery(<span class="hljs-string">&quot;http://www.aaa.com/path?q1=11&amp;q2=22&amp;q3=33&quot;</span>, params)
+=&gt;
+<span class="hljs-string">&quot;http://www.aaa.com/path?q1=abc&amp;q2=hello&amp;q3=33&amp;q4=444&quot;</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>替换url中传参的值，如果原url没有该值，自动填充</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -419,10 +582,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in UrlQuery/serialQuery.ts:7</li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/UrlQuery/serialQuery.ts#L21">UrlQuery/serialQuery.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>const params = {
+  <span class="hljs-selector-tag">a</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-selector-tag">b</span>: null,
+  c: <span class="hljs-number">1</span>,
+  d: <span class="hljs-string">&quot;&quot;</span>
+}
+<span class="hljs-function"><span class="hljs-title">serialQuery</span><span class="hljs-params">(params)</span></span> =&gt; <span class="hljs-string">&quot;a=0&amp;c=1&quot;</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>序列化传参</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -443,21 +630,40 @@
 					<a name="isarray" class="tsd-anchor"></a>
 					<h3>is<wbr>Array</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isArray.ts#L7">internal/isArray.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/isArray.ts#L16">internal/isArray.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">isArray</span><span class="hljs-params">([])</span></span> =&gt; true
+<span class="hljs-function"><span class="hljs-title">isArray</span><span class="hljs-params">({})</span></span> =&gt; false
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断数据是否是数组</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -470,21 +676,40 @@
 					<a name="isdate" class="tsd-anchor"></a>
 					<h3>is<wbr>Date</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Date<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Date<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isDate.ts#L7">internal/isDate.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/isDate.ts#L17">internal/isDate.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>isDate(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()) =&gt; <span class="hljs-literal">true</span>
+isDate({}) =&gt; <span class="hljs-literal">false</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断数据是否是Date对象</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -503,10 +728,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isEmpty.ts#L7">internal/isEmpty.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/isEmpty.ts#L20">internal/isEmpty.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">isEmpty</span><span class="hljs-params">({})</span></span> =&gt; true
+<span class="hljs-function"><span class="hljs-title">isEmpty</span><span class="hljs-params">([])</span></span> =&gt; true
+<span class="hljs-function"><span class="hljs-title">isEmpty</span><span class="hljs-params">(<span class="hljs-string">&quot;&quot;</span>)</span></span> =&gt; true
+<span class="hljs-function"><span class="hljs-title">isEmpty</span><span class="hljs-params">(null)</span></span> =&gt; true
+<span class="hljs-function"><span class="hljs-title">isEmpty</span><span class="hljs-params">(undefined)</span></span> =&gt; true
+<span class="hljs-function"><span class="hljs-title">isEmpty</span><span class="hljs-params">(<span class="hljs-number">0</span>)</span></span> =&gt; false
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断数据是否是空值</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -530,10 +778,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isFunction.ts#L7">internal/isFunction.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/isFunction.ts#L15">internal/isFunction.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>isFunction(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{}) =&gt; <span class="hljs-literal">true</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断对象是否是函数</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -551,21 +817,39 @@
 					<a name="isnull" class="tsd-anchor"></a>
 					<h3>is<wbr>Null</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Null<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Null<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isNull.ts#L7">internal/isNull.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/isNull.ts#L15">internal/isNull.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>isNull(<span class="hljs-keyword">null</span>) =&gt; <span class="hljs-keyword">true</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断数据是否是null</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -578,21 +862,39 @@
 					<a name="isobject" class="tsd-anchor"></a>
 					<h3>is<wbr>Object</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Object<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Object<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isObject.ts#L7">internal/isObject.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/isObject.ts#L15">internal/isObject.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">isObject</span><span class="hljs-params">({})</span></span> =&gt; true
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断数据是否是对象</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -611,57 +913,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/isRegExp.ts#L7">internal/isRegExp.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/isRegExp.ts#L15">internal/isRegExp.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>isRegExp(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-regexp">/1/g</span>)) =&gt; <span class="hljs-literal">true</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断数据是否是正则表达式</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="runtime" class="tsd-anchor"></a>
-					<h3>run<wbr>Time</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Time<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Func</span>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/runtime.ts#L10">internal/runtime.ts:10</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>该方法用于测试函数在指定时间内执行的次数，用于测试函数性能</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>fn: <span class="tsd-signature-type">Func</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>需要测试的函数</p>
-									</div>
-								</li>
-								<li>
-									<h5>time: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>指定时间</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -675,10 +956,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/internal/whatsType.ts#L6">internal/whatsType.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/internal/whatsType.ts#L21">internal/whatsType.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>whatsType({}, <span class="hljs-string">&quot;Object&quot;</span>) =&gt; <span class="hljs-literal">true</span>
+whatsType([], <span class="hljs-string">&quot;Array&quot;</span>) =&gt; <span class="hljs-literal">true</span>
+whatsType(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(), <span class="hljs-string">&quot;Date&quot;</span>) =&gt; <span class="hljs-literal">true</span>
+whatsType(() =&gt; {}, <span class="hljs-string">&quot;Function&quot;</span>)) =&gt; <span class="hljs-literal">true</span>
+whatsType(<span class="hljs-literal">null</span>, <span class="hljs-string">&quot;Null&quot;</span>) =&gt; <span class="hljs-literal">true</span>
+whatsType(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-regexp">/1/g</span>), <span class="hljs-string">&quot;RegExp&quot;</span>)) =&gt; <span class="hljs-literal">true</span>
+</code></pre>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>判断数据类型</p>
+									</dd>
+									<dt>author</dt>
+									<dd><p>林文书</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -687,11 +991,10 @@
 								</li>
 								<li>
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>返回布尔值</p>
 						</li>
 					</ul>
 				</section>
@@ -708,19 +1011,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/Array/flat.ts#L12">Array/flat.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/Array/flat.ts#L16">Array/flat.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code>flatArray(<span class="hljs-comment">[<span class="hljs-comment">[1]</span>, <span class="hljs-comment">[2]</span>]</span>) =&gt; <span class="hljs-comment">[1, 2]</span>
+flatArray(<span class="hljs-comment">[<span class="hljs-comment">[1]</span>, <span class="hljs-comment">[2, 3, <span class="hljs-comment">[4, 5]</span>]</span>]</span>, 2) =&gt; <span class="hljs-comment">[1, 2, 3, <span class="hljs-comment">[4, 5]</span>]</span>
+</code></pre>
+								</div>
 								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>v0.1.0</p>
+									</dd>
 									<dt>remarks</dt>
-									<dd><p>这个方法返回一个一级数组</p>
+									<dd><p>扁平化多维数组，可设置扁平维度，最后返回一个数组</p>
 									</dd>
 									<dt>author</dt>
 									<dd><p>李博</p>
-									</dd>
-									<dt>see</dt>
-									<dd><p>这个方法用于扁平化多维数组</p>
 									</dd>
 								</dl>
 							</div>
@@ -740,7 +1051,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>返回 一级数组</p>
 						</li>
 					</ul>
 				</section>
@@ -757,21 +1067,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/c44999b/src/hello.ts#L14">hello.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/NOcooker/xpots/blob/5ca68ec/src/hello.ts#L15">hello.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<pre><code><span class="hljs-function"><span class="hljs-title">hello</span><span class="hljs-params">(<span class="hljs-string">&quot;xpots&quot;</span>)</span></span> =&gt; <span class="hljs-string">&quot;Hello xpots&quot;</span>
+</code></pre>
+								</div>
 								<dl class="tsd-comment-tags">
+									<dt>version</dt>
+									<dd><p>当前版本, 如v0.2.0</p>
+									</dd>
+									<dt>since</dt>
+									<dd><p>首次发布时的版本, 如v0.1.0</p>
+									</dd>
 									<dt>remarks</dt>
-									<dd><p>这个方法返回一个字符串 <a href="http://www.baidu.com" class="external">百度</a></p>
+									<dd><p>注释参考文档 <a href="https://typedoc.org/guides/doccomments/#supported-tags" class="external">typedoc</a></p>
 									</dd>
 									<dt>author</dt>
-									<dd><p>林文书</p>
-									</dd>
-									<dt>see</dt>
-									<dd><p>这个方法是用来打招呼的</p>
-										<pre><code>&lt;my-custom-<span class="hljs-keyword">element</span>&gt;Highlight JS will auto detect <span class="hljs-keyword">the</span> language&lt;/my-custom-<span class="hljs-keyword">element</span>&gt;
-</code></pre>
+									<dd><p>作者</p>
 									</dd>
 								</dl>
 							</div>
@@ -785,7 +1100,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>返回 hello ${name}</p>
+							<p>返回 &quot;hello ${name}&quot;</p>
 						</li>
 					</ul>
 				</section>
@@ -854,9 +1169,6 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#replacequery" class="tsd-kind-icon">replace<wbr>Query</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#runtime" class="tsd-kind-icon">run<wbr>Time</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#serialquery" class="tsd-kind-icon">serial<wbr>Query</a>

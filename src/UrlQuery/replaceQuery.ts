@@ -1,7 +1,23 @@
 import { AnyObject } from '../types/public';
 
 /**
+ * 
+ * ```
+ * const params = {
+ *   q1: "abc",
+ *   q2: "hello",
+ *   q4: "444"
+ * }
+ * replaceQuery("http://www.aaa.com/path?q1=11&q2=22&q3=33", params)
+ * =>
+ * "http://www.aaa.com/path?q1=abc&q2=hello&q3=33&q4=444"
+ * ```
+ * @version v0.1.0
+ * @since v0.1.0
  * @category url参数相关
+ * @remarks
+ * 替换url中传参的值，如果原url没有该值，自动填充
+ * @author 林文书
  * @param url 
  * @param params 
  */

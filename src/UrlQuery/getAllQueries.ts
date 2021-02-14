@@ -3,8 +3,24 @@ import isNull from "../../lib/internal/isNull";
 import isEmpty from "../internal/isEmpty";
 
 /**
+ * ```
+ * getAllQueries("http://www.aaa.com/path?q1=11&q2=22&q3=33")
+ * =>
+ * {
+ *   q1: "11",
+ *   q2: "22",
+ *   q3: "33"
+ * }
+ * ```
+ * 
+ * @version v0.1.0
+ * @since v0.1.0
  * @category url参数相关
- * @param url 
+ * @author 林文书
+ * @remarks
+ * 获取url中的全部传参
+ * @param params 
+ * @returns 返回 url传参组成的对象
  */
 function getAllQueries(url?: string): AnyObject {
   const rslt: AnyObject = {};

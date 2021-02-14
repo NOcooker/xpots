@@ -1,6 +1,19 @@
 import isDate from './internal/isDate';
 import { AnyObject } from './types/public';
 
+/**
+ * ```
+ * formatDate(1613268688559, "yyyy/MM/dd") => "2021/02/14"
+ * ```
+ * 
+ * @version v0.1.0
+ * @since v0.1.0
+ * @remarks
+ * 该方法用于格式化时间
+ * @author 林文书
+ * @param date 
+ * @param format 
+ */
 function formatDate(date: Date | string | number, format: string = "yyyy-MM-dd"): string {
   if (!date) {
     return "";
@@ -15,7 +28,7 @@ function formatDate(date: Date | string | number, format: string = "yyyy-MM-dd")
   if (typeof date === "string" || "number") {
     newDate = new Date(date as (string | number));
   }
-  if (newDate === "Invalid Date") {
+  if (isNaN(newDate)) {
     return "";
   }
 
