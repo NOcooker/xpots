@@ -19,8 +19,8 @@ before_deploy:
   - npm run build # 生成npm包，生成doc文档页
 deploy:
   - provider: npm
-    email: "$NPM_EMAIL"
-    api_key: "$NPM_TOKEN"
+    email: $NPM_EMAIL
+    api_key: $NPM_API_TOKEN
     skip_cleanup: true # 在运行测试之后且在发行之前，Travis CI会清理所有其他文件和所做的更改， 默认false标识要清理
     on:
       tags: true
@@ -28,7 +28,7 @@ deploy:
   - provider: pages
     local_dir: "./docs"
     skip_cleanup: true
-    github_token: "$GITHUB_TOKEN"
+    github_token: $GITHUB_TOKEN
     keep_history: true
     on:
       tags: true
