@@ -1,6 +1,6 @@
 {
   "name": "xpots",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "基于ts开发的前端js工具库",
   "main": "lib/umd.min.js",
   "types": "lib/index.d.ts",
