@@ -35,5 +35,5 @@ deploy:
 
 branches:
   only:
-  # - /^v\d+\.\d+(\.\d+)?(-\S*)?$/  # 只在tag分支时候才会build
-  - master
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/  # 只在tag分支时候才会build
+  # - master
